@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestión de Horarios Escolares</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- LOGIN -->
+  <section id="login-section">
+    <h2>Gestión de Horarios</h2>
+    <h2>ESCUELA DR JOSE FRANCISCO PEÑA GOMEZ 00558</h2>
+    <h3>SERVIR CON GENEROSIDAD Y OPTIMISMO</h3>
+    <input type="text" id="username" placeholder="Usuario"><br>
+    <input type="password" id="password" placeholder="Contraseña"><br>
+    <button id="login-btn" class="btn">Iniciar sesión</button>
+  </section>
+
+  <!-- DIRECTOR -->
+  <section id="director-section" class="hidden">
+    <h2>Bienvenido, <span id="director-name"></span></h2>
+    <button id="matutino-btn" class="btn">Horario Matutino</button>
+    <button id="vespertino-btn" class="btn">Horario Vespertino</button>
+    <button id="logout-btn" class="btn red">Cerrar sesión</button>
+    <div id="grados-section" class="hidden"></div>
+    <div id="curso-horario" class="hidden"></div>
+  </section>
+
+  <!-- COORDINADOR -->
+  <section id="coordinador-section" class="hidden">
+    <h2>Bienvenido, Coordinador</h2>
+    <div id="coordinador-horarios"></div>
+    <button id="logout-btn2" class="btn red">Cerrar sesión</button>
+  </section>
+
+  <!-- MAESTRO -->
+  <section id="maestro-section" class="hidden">
+    <h2>Horario de <span id="maestro-name"></span></h2>
+    <div id="maestro-horario"></div>
+    <button id="logout-btn3" class="btn red">Cerrar sesión</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
